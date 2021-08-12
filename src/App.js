@@ -1,11 +1,9 @@
-import './App.css';
-import Users from "./components/users/Users";
-function App() {
-  return (
-    <div>
-      <usersList/>
-    </div>
-  );
-}
+import 'App.css';
 
-export default App;
+export default function App(){
+    return (
+        <div>
+
+        </div>
+    );
+}
