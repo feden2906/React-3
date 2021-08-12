@@ -1,4 +1,4 @@
-export let usersList = [
+export let users = [
     {
         id: 1,
         name: 'Leanne Graham',
