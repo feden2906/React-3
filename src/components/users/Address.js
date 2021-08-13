@@ -1,11 +1,13 @@
-export const Address = ({address}) => {
+import {Geo} from "./Geo";
+export const Address = ({city, street, suite, zipcode, geo}) => {
     return (
         <ul>
-            <li>city: {address.city}</li>
-            <li>street: {address.street}</li>
-            <li>suite: {address.suite}</li>
-            <li>zipcode: {address.zipcode}</li>
-            <Geo {...address.geo}/>
+            <li>city: {city}</li>
+            <li>street: {street}</li>
+            <li>suite: {suite}</li>
+            <li>zipcode: {zipcode}</li>
+            <Geo {...geo}/>
         </ul>
     )
 }
+

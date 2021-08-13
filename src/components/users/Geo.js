@@ -1,9 +1,8 @@
-import {Geo} from "./Geo";
-export const Geo = ({geo}) => {
+export const Geo = ({lat, lng}) => {
     return (
         <ul>
-           <li>lay: {geo.lat}</li>
-            <li>lng: {geo.lng}</li>
+           <li>lay: {lat}</li>
+            <li>lng: {lng}</li>
         </ul>
     );
 }
