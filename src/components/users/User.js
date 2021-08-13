@@ -9,7 +9,7 @@ export default function User({user}) {
                 <li>name: {user.name}</li>
                 <li>username: {user.username}</li>
                 <li>email: {user.email}</li>
-                <Address {...user.address}/>
+                <li>address: <Address {...user.address}/></li>
             </ul>
         </div>
 

@@ -6,7 +6,7 @@ export const Address = ({city, street, suite, zipcode, geo}) => {
             <li>street: {street}</li>
             <li>suite: {suite}</li>
             <li>zipcode: {zipcode}</li>
-            <Geo {...geo}/>
+            <li>geo: <Geo {...geo}/></li>
         </ul>
     )
 }
