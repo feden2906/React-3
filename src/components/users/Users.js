@@ -1,11 +1,12 @@
 import {usersList} from "../data-file";
+import User from "./User";
 
-export default function Users (){
+export default function Users() {
     return (
-        {
-            usersList.map(user=> <div>
-
-            </div>)
-        }
-    )
+        <div>
+            {
+                usersList.map(userItem => <User key={userItem.id} user={userItem}/>)
+            }
+        </div>
+    );
 }
