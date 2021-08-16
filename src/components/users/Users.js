@@ -1,18 +1,16 @@
-import {useEffect, useState} from "react";
-import {findAllByDisplayValue} from "@testing-library/react";
-import {getUsers} from "../user.service";
+import {getUsers} from "../serviсe/user.service";
 
+import {useEffect, useState} from "react";
 export default function Users () {
-    let [users, setUsers] = useState([]);
+    let [users, setUsers] =useState([]);
     useEffect(() => {
         getUsers().then(value => setUsers([...value]));
-    }, []);
-
+    },[]);
     return (
         <div>
             {
-                users.map(value => <User key={value.id} value={value}/>)
+                users.map((userItem) => <User key = {userItem.id}/>)
             }
         </div>
-    );
+    )
 }
