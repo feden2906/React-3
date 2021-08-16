@@ -1,5 +1,5 @@
 import {getUsers} from "../serviсe/user.service";
-
+import User from "../user/User";
 import {useEffect, useState} from "react";
 export default function Users () {
     let [users, setUsers] =useState([]);
@@ -12,5 +12,5 @@ export default function Users () {
                 users.map((userItem) => <User key = {userItem.id}/>)
             }
         </div>
-    )
+    );
 }
