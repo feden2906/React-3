@@ -25,13 +25,14 @@
 //
 // у вас должна быть форма для добавления машинки, и под ней должен быть адекватный вывод всех машин
 import './App.css';
+import Cars from "./components/cars/Cars";
 
 
 
 export default function App() {
     return (
         <div>
-
+            <Cars/>
         </div>
     );
 }
