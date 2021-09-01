@@ -11,7 +11,8 @@ const postCar = (car) => {
         method: 'POST',
         body: JSON.stringify(car), //{model: 'name', year: number, price: number}
         headers: {
-            'Content-type': 'application/json: charset=UTF-8',
+            'Content-Type': 'application/json;charset=UTF-8',     // good
+         // 'Content-type': 'application/json: charset=UTF-8',
         },
     })
         .then((response) => response.json());
