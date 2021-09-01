@@ -1,18 +1,20 @@
-let ApiService = 'http://91.201.233.14/api/v1/cars';
-let url = ApiService;
+let carsUrl = 'http://91.201.233.14/api/v1/cars';
+// let url = carsUrl;
 
 const getCars = () => {
-    return fetch(url)
+    return fetch(carsUrl)
         .then(value => value.json());
 };
 
-const postCars = (car) => {
-    return fetch( url , {
+const postCar = (car) => {
+        fetch (carsUrl, {
         method: 'POST',
         body: JSON.stringify(car), //{model: 'name', year: number, price: number}
-        headers: {'Content-type': 'application/json: charset=UTF-8',}
+        headers: {
+            'Content-type': 'application/json: charset=UTF-8',
+        },
     })
-        .then(value => value.json());
+        .then((response) => response.json());
 };
 
-export {getCars, postCars};
+export {getCars, postCar};
