@@ -13,7 +13,6 @@ export default function Cars() {
         e.preventDefault();
         let tempCar = {model, year, price};
         setCar({...tempCar});
-        // saveCar(tempCar);
     }
 
     let onInputChangeModel = (e) => {
